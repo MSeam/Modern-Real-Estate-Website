@@ -1,0 +1,259 @@
+/* Font Family Satoshi */
+@font-face {
+  font-family: 'Satoshi-Regular', sans-serif;
+  src: url('../font-family/Satoshi-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Satoshi-Medium', sans-serif;
+  src: url('../font-family/Satoshi-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('../font-family/Satoshi-Bold.ttf') format('truetype');
+}
+
+:root {
+  /* Colors */
+  --color-grayscale-25: #fcfcfc;
+  --color-grayscale-50: #fafafa;
+  --color-grayscale-100: #f4f4f5;
+  --color-grayscale-200: #e4e4e7;
+  --color-grayscale-300: #d1d1d6;
+  --color-grayscale-400: #a0a0ab;
+  --color-grayscale-500: #70707b;
+  --color-grayscale-600: #51525c;
+  --color-grayscale-700: #3f3f46;
+  --color-grayscale-800: #26272b;
+  --color-grayscale-900: #18181b;
+
+  /* Font Family */
+  --font-family-regular: 'Satoshi-Regular', sans-serif;
+  --font-family-medium: 'Satoshi-Medium', sans-serif;
+  --font-family-bold: 'Satoshi-Bold', sans-serif;
+
+  /* Heading Large */
+  --heading-1-display-large-font-size: 104px;
+  --heading-1-display-large-regular-font-weight: 400;
+  --heading-1-display-large-line-height: 110%;
+  --heading-1-display-large-medium-font-weight: 500;
+
+  /* Heading Medium */
+  --heading-2-display-medium-font-size: 64px;
+  --heading-2-display-medium-regular-font-weight: 400;
+  --heading-2-display-medium-line-height: 120%;
+  --heading-2-display-medium-medium-font-weight: 500;
+  --heading-3-display-medium-font-size: 52px;
+  --heading-3-display-medium-regular-font-weight: 400;
+  --heading-3-display-medium-line-height: 120%;
+  --heading-3-display-medium-medium-font-weight: 500;
+
+  /* Heading Small */
+  --heading-4-display-small-font-size: 48px;
+  --heading-4-display-small-regular-font-weight: 400;
+  --heading-4-display-small-line-height: 120%;
+  --heading-4-display-small-medium-font-weight: 500;
+
+  /* Heading XSmall */
+  --heading-5-display-xsmall-font-size: 40px;
+  --heading-5-display-xsmall-regular-font-weight: 400;
+  --heading-5-display-xsmall-line-height: 120%;
+  --heading-5-display-xsmall-medium-font-weight: 500;
+
+  /* Heading XXSmall */
+  --heading-6-display-xxsmall-font-size: 32px;
+  --heading-5-display-xxsmall-regular-font-weight: 400;
+  --heading-5-display-xxsmall-line-height: 120%;
+  --heading-6-display-xxsmall-medium-font-weight: 500;
+
+  /* Heading XXXSmall */
+  --heading-7-heading-xxxsmall-font-size: 24px;
+  --heading-7-heading-xxxsmall-regular-font-weight: 400;
+  --heading-7-heading-xxxsmall-line-height: 120%;
+  --heading-7-heading-xxxsmall-medium-font-weight: 500;
+
+  /* Body XLarge */
+  --body-xlarge-font-size: 20px;
+  --body-xlarge-line-height: 155%;
+  --body-xlarge-bold-font-weight: 700;
+  --body-xlarge-bold-line-height: 120%;
+  --body-xlarge-medium-font-weight: 500;
+  --body-xlarge-regular-font-weight: 400;
+
+  /* Body Large */
+  --body-large-font-size: 18px;
+  --body-large-bold-font-weight: 700;
+  --body-large-line-height: 155%;
+  --body-large-medium-font-weight: 500;
+  --body-large-regular-font-weight: 400;
+
+  /* Body Medium */
+  --body-medium-font-size: 16px;
+  --body-medium-bold-font-weight: 700;
+  --body-medium-line-height: 155%;
+  --body-medium-medium-font-weight: 500;
+  --body-medium-medium-line-height: 125%;
+  --body-medium-regular-font-weight: 400;
+  --body-medium-regular-line-height: 120%;
+
+  /* Body Small */
+  --body-small-font-size: 14px;
+  --body-small-bold-font-weight: 700;
+  --body-small-line-height: 155%;
+  --body-small-medium-font-weight: 500;
+  --body-small-regular-font-weight: 400;
+
+  /* Body XSmall */
+  --body-xsmall-font-size: 12px;
+  --body-xsmall-bold-font-weight: 700;
+  --body-xsmall-line-height: 155%;
+  --body-xsmall-medium-font-weight: 500;
+  --body-xsmall-regular-font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-regular), sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 89%;
+  margin: 0 auto;
+}
+
+/* NavBar_Start Style */
+nav {
+  height: 100vh;
+  padding: 19px 0;
+}
+
+/* Navigation_Bar Style */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 24px;
+  height: 24px;
+}
+
+.logo span {
+  color: var(--color-grayscale-900);
+  font-family: var(--font-family-bold);
+  font-style: var(--body-xlarge-font-style);
+  font-weight: 900;
+  line-height: normal;
+}
+
+/* Mobile_Menu Style */
+.mobile_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Navigation_Menu Style */
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+li {
+  padding: 8px 12px;
+}
+
+a {
+  color: var(--color-grayscale-500);
+  font-family: var(--font-family-regular);
+  font-size: var(--body-small-font-size);
+  font-weight: var(--body-small-regular-font-weight);
+  line-height: var(--body-small-line-height);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-grayscale-900);
+}
+
+.page {
+  color: var(--color-grayscale-900);
+}
+
+/* Button Style */
+.common_btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px 18px;
+  border: 1px solid var(--color-grayscale-900);
+  border-radius: 12px;
+  background: var(--color-grayscale-900);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.common_btn a {
+  color: var(--color-grayscale-25);
+  font-family: var(--font-family-medium);
+  font-size: var(--body-medium-font-size);
+  font-weight: var(--body-medium-medium-font-weight);
+  line-height: var(--body-medium-line-height);
+  transition: background 0.3s ease;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -ms-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+}
+
+.common_btn:hover {
+  background: var(--color-grayscale-25);
+}
+
+.common_btn:hover a {
+  color: var(--color-grayscale-900);
+}
+
+/* NavBar_End Style */
